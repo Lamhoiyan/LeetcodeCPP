@@ -115,6 +115,7 @@ sort(nums.begin(), nums.end());
 - 非严格递增序列：指的就是整个序列是从小到大的，但是里边会有一些数字会在它本身周围有重复。
 
 ## 冒号的使用
+[参考链接](https://blog.csdn.net/weixin_41194129/article/details/109642051?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-109642051-blog-100737875.235%5Ev39%5Epc_relevant_yljh&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-109642051-blog-100737875.235%5Ev39%5Epc_relevant_yljh&utm_relevant_index=2)
 
 ## 下划线
 - 跟python里的使用不一样，python里单下划线表示保护变量，双下划线表示私有变量。
@@ -133,3 +134,8 @@ cout<<*p;
 //输出结果是123。
 ```
 
+## const 
+[参考链接](https://www.cnblogs.com/wintergrass/archive/2011/04/15/2015020.html)
+
+## auto
+[参考链接](https://blog.csdn.net/WLFIGHTER/article/details/50412761)
