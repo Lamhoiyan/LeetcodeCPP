@@ -1,6 +1,23 @@
 
 
 # 数据结构
+
+## 栈和队列
+- 栈和队列是STL（C++标准库）里面的两个数据结构。
+- 栈是以底层容器完成其所有的工作，对外提供统一的接口，底层容器是可插拔的（也就是说我们可以控制使用哪种容器来实现栈的功能）。
+- STL中栈往往不被归类为容器，而被归类为container adapter（容器适配器）。
+
+
+在SGI STL里，栈和队列的底层是deque。
+
+### 栈和队列的函数
+stack
+- push、pop、empty
+
+queue
+- back、front、pop、size、empty
+
+
 ## 哈希结构
 - 基于哈希表：unordered_set、unordered_map
 - 基于红黑树：set、mutliset、map、multimap
