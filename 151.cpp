@@ -1,7 +1,12 @@
 #include <iostream>
+#include<string>
+
 using namespace std;
 
 int main(){
-    cout<<"Hello";
+    string a="123";
+    for(auto c: a){
+        cout<< c <<endl;
+    }
     return 0;
 }
