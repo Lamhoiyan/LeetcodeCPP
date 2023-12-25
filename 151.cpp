@@ -1,12 +1,13 @@
 #include <iostream>
-#include<string>
-
+#include <string>
+#include <vector>
 using namespace std;
 
 int main(){
-    string a="123";
-    for(auto c: a){
-        cout<< c <<endl;
-    }
+    vector<vector<int>> result;
+
+    result[0].push_back(1);
+
+    cout<<result.size();
     return 0;
 }

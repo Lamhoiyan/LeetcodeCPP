@@ -1,6 +1,8 @@
 
 # 未解决的题目
 239 滑动窗口最大值
+110 平衡二叉树：求高度和求深度的区别，求深度是从上往下，求高度要从下往上。
+
 
 # 问题
 - C++中stack，queue 是容器么？
@@ -32,6 +34,14 @@
 ### 遍历方式
 - 深度优先：前中后序，一般用递归，栈
 - 广度优先：层次遍历，一般用队列
+
+用空指针做标记，可以将前中后序的遍历格式同一。不然后序需要另外处理。
+
+```cpp
+# 层次遍历
+# 队列的size，就是每层数字的size。
+
+```
 
 ### 注意事项
 - C++中map、set、multimap，multiset的底层实现都是平衡二叉搜索树，所以map、set的增删操作时间时间复杂度是logn
@@ -67,6 +77,9 @@ queue
 
 
 ## 数据类型
+C++中常量INT_MAX和INT_MIN分别表示最大、最小整数，定义在头文件limits.h中。
+因为int占4字节32位，根据二进制编码的规则，INT_MAX = 2^31-1，INT_MIN= -2^31.
+
 - 最大的数字
 ```cpp
 int result = INT32_MAX;
@@ -120,6 +133,26 @@ for(const auto& p:pp){ //const
 int record[26] = {0};
 ```
 
+```cpp
+vector<int> a = {1,2,3};
+    
+    vector<int> b(a.begin(), a.begin()+1); //左闭右开
+    
+    for(int i=0;i<b.size();i++){
+        cout<<b[i]<<endl;
+    }
+```
+此时只输出1.
+
+### 二维数组
+如果没有初始化，在插入数据之前，要先插入一个空的vector。
+
+```cpp
+vector<vector<int>> result;
+result.push_back(vector<int>()); //没有这个会报错
+result[0].push_back(1);
+
+```
 ## 字符串
 - 添加元素 push_back
 - 删除元素 pop_back
